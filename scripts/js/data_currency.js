@@ -22,6 +22,7 @@ fetchJSON('scripts/JSON/data_historical.json', function(xhttp){
  * @description historical data from json file
  */
 const result = JSON.parse(sessionStorage.getItem(storage_name));
+console.log(result);
 /**
  * @name country
  * @type {String}
@@ -33,7 +34,7 @@ const country = 'UK';
  * @type {String}
  * @description currency code
  */
-const target = {key: 'USA', code: 'USD'};
+const target = {key: 'MEX', code: 'MXN'};
 /**
  * @name coin
  * @type {Object}
@@ -55,15 +56,40 @@ const coin = {
 const dates = [];
 const rates = [];
 result[country].forEach(item => {
-    console.log(item.date);
-    //let date_formatted = new Date(item.date).toLocaleString('en-UK', {month: 'short', day: 'numeric'});
-    let date_formatted = new Date(item.date).getMonth();
-    dates.push(date_formatted);
+    // format date
+    let format_date = function(date_string){
+        // parse
+        let date_arr = date_string.split('-');
+        let year     = date_arr[0];
+        let month    = date_arr[1] - 1;
+        let day      = date_arr[2];
+        return new Date(year, month, day).toLocaleString('en-US', {month: 'short', day: 'numeric'});
+    };
+    dates.push(format_date(item.date));
     rates.push(item.exchange[target.code]);
 });
 console.log(dates);
 console.log(rates);
 
+/**
+ * @name options
+ * @type {Object}
+ */
+const options = {
+    //layout: {padding:24}
+    plugins: {
+        title: {
+            position: 'top',
+            display: true,
+            text: 'Currency Exchange Rates',
+            color: 'rgb(255, 0, 0)',
+            font: {size: 24}
+        },
+        subtitle: {display: true, text: 'Subtitulo'},
+        legend: {display: true, position: 'bottom', align: 'center', text: 'Legend'},
+        tooltip: {}
+    }
+};
 /**
  * @name dataset_test
  * @type {Object}
@@ -72,8 +98,11 @@ const dataset_test = [{
     label: `${coin[target.key].units} to ${coin[country].units}`,
     data: rates,
     fill: true,
+    backgroundColor: 'rgba(255, 0, 0, 0.2)',
     borderColor: 'red',
-    tension: 0.0
+    tension: 0.0,
+    radius: 4,
+    hoverRadius: 12,
 }];
 /**
  * @name data_test
@@ -81,7 +110,7 @@ const dataset_test = [{
  */
 const data_test = {
     labels: dates,
-    datasets: dataset_test
+    datasets: dataset_test,
 }
 /**
  * @name config_line
@@ -90,12 +119,17 @@ const data_test = {
  */
 const config_line = {
     type: 'line',
-    data: data_test
+    data: data_test,
+    options: options
 };
+/**
+ * @name ctx
+ */
+const ctx = document.getElementById('line_style');
 /**
  * @implements Charts.js
  * @name chart_line
  * @type {HTMLElement}
  * @description
  */
-const chart_line = new Chart(document.getElementById('line_style'), config_line);
+const chart_line = new Chart(ctx, config_line);

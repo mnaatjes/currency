@@ -1,0 +1,17 @@
+/*--------------------------------*/
+/* Backend: Container Inputs */
+/*--------------------------------*/
+.input__container {
+    /*POSITION*/
+    margin: 12px 0;
+    padding: var(--padding);
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: auto auto auto;
+    grid-auto-flow: column;
+    column-gap: 12px;
+    /*BORDER*/
+    border-radius: var(--radius);
+    border: var(--border);
+}

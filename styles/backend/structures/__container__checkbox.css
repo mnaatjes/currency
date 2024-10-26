@@ -1,0 +1,16 @@
+/*--------------------------------*/
+/* Backend: Container Checkbox */
+/*--------------------------------*/
+.checkbox__container {
+    /*GRID*/
+    grid-row: 1 / span 2;
+    /*POSITION*/
+    padding-right: 12px;
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: row;
+    /*BORDER*/
+    border-right: var(--border-heavy);
+}

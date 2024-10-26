@@ -1,0 +1,102 @@
+{
+    "GBP": {
+        "country": "United Kingdom",
+        "abbv": "UK",
+        "units": "Pound Sterling",
+        "symbol": "&pound;",
+        "introduced": 1489,
+        "banknotes": [5, 10, 20, 50, 100],
+        "text": "lorem12",
+        "flag_img": {"src": "uk.svg", "alt": ""},
+        "note_img": {"src": "", "alt": ""}
+    },
+    "USD": {
+        "country": "United States",
+        "abbv": "USA",
+        "code": "USD",
+        "units": "Dollar",
+        "symbol": "&dollar;",
+        "introduced": 1792,
+        "banknotes": [1, 5, 10, 20, 50, 100],
+        "text": "The monetary policy of the United States is conducted by the Federal Reserve System, which acts as the nation's central bank.",
+        "flag_img": {"src": "usa.svg", "alt": "usd"},
+        "note_img": {"src": "usd.jpg", "alt": "United States One Dollar Bill"}
+    },
+    "MXN": {
+        "country": "null",
+        "abbv": "null",
+        "units": "null",
+        "symbol": "null",
+        "introduced": "null",
+        "banknotes": [],
+        "text": "null",
+        "flag_img": {"src": "", "alt": ""},
+        "note_img": {"src": "", "alt": ""}
+    },
+    "AUD": {
+        "country": "null",
+        "abbv": "null",
+        "units": "null",
+        "symbol": "null",
+        "introduced": "null",
+        "banknotes": [],
+        "text": "null",
+        "flag_img": {"src": "", "alt": ""},
+        "note_img": {"src": "", "alt": ""}
+    },
+    "INR": {
+        "country": "null",
+        "abbv": "null",
+        "units": "null",
+        "symbol": "null",
+        "introduced": "null",
+        "banknotes": [],
+        "text": "null",
+        "flag_img": {"src": "", "alt": ""},
+        "note_img": {"src": "", "alt": ""}
+    },
+    "BRL": {
+        "country": "null",
+        "abbv": "null",
+        "units": "null",
+        "symbol": "null",
+        "introduced": "null",
+        "banknotes": [],
+        "text": "null",
+        "flag_img": {"src": "", "alt": ""},
+        "note_img": {"src": "", "alt": ""}
+    },
+    "EUR": {
+        "country": "null",
+        "abbv": "null",
+        "units": "null",
+        "symbol": "null",
+        "introduced": "null",
+        "banknotes": [],
+        "text": "null",
+        "flag_img": {"src": "", "alt": ""},
+        "note_img": {"src": "", "alt": ""}
+    },
+    "AED": {
+        "country": "null",
+        "abbv": "null",
+        "units": "null",
+        "symbol": "null",
+        "introduced": "null",
+        "banknotes": [],
+        "text": "null",
+        "flag_img": {"src": "", "alt": ""},
+        "note_img": {"src": "", "alt": ""}
+    },
+    "JPY": {
+        "country": "null",
+        "abbv": "null",
+        "units": "null",
+        "symbol": "&yen;",
+        "introduced": "null",
+        "banknotes": [],
+        "text": "null",
+        "flag_img": {"src": "", "alt": ""},
+        "note_img": {"src": "", "alt": ""}
+    }
+}

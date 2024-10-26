@@ -14,7 +14,7 @@
     grid-auto-rows: auto;
     grid-auto-flow: row;
     grid-gap: var(--ui-grid-gap);
-    align-self: end;
+    align-self: center;
     /*BACKGROUND*/
     background: var(--bkrnd-grid);
     /*DEBUGGING*/

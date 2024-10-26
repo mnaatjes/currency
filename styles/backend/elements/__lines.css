@@ -1,0 +1,17 @@
+/*--------------------------------*/
+/* Backend: Lines */
+/*--------------------------------*/
+.line--vertical {
+    /*POSITION*/
+    margin: 0 12px;
+    height: 100%;
+    /*BORDER*/
+    border-right: var(--border-heavy);
+}
+.line--horizontal {
+    /*POSITION*/
+    margin: 12px 0;
+    width: 100%;
+    /*BORDER*/
+    border-bottom: var(--border-heavy);
+}

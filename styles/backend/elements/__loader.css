@@ -1,0 +1,31 @@
+/*--------------------------------*/
+/* Backend: Loader */
+/*--------------------------------*/
+.loader__container {
+    /*POSITION*/
+    /*
+    margin: var(--margin);
+    padding: var(--padding);
+    */
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*BORDER*/
+    border-radius: var(--radius);
+    border: var(--border);
+}
+#loader {
+    /*POSITION*/
+    width: 120px;
+    height: 120px;
+    /*DISPLAY*/
+    display: none;
+    /*BORDER*/
+    border: 16px solid var(--lite);
+    border-top: 16px solid #6495ed;
+    border-radius: 100%;
+    /*ANIMATION*/
+    animation: spin 1.15s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite forwards normal;
+}

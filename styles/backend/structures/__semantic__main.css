@@ -1,0 +1,14 @@
+/*--------------------------------*/
+/* Backend: Semantic - Main */
+/*--------------------------------*/
+main {
+    /*POSITION*/
+    padding: var(--padding);
+    /*BORDER*/
+    border-radius: var(--radius);
+    border: var(--border-heavy);
+    /*BACKGROUND*/
+    background-color: var(--bkrnd);
+    /*SHADOW*/
+    box-shadow: var(--shadow);
+}

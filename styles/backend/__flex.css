@@ -1,0 +1,33 @@
+/*--------------------------------*/
+/* Backend: Flex */
+/*--------------------------------*/
+.flex {
+    /*POSITION*/
+    width: 100vw;
+    height: 100vh;
+    /*DISPLAY*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*BACKGROUND*/
+    background-color: #999999;
+    /*TEXT*/
+    color: var(--stroke-dark);
+}
+/*--------------------------------*/
+/* Flex: Col */
+/*--------------------------------*/
+[class$="__col"] {
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+}
+/*--------------------------------*/
+/* Flex: Row */
+/*--------------------------------*/
+[class$="__row"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

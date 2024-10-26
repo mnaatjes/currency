@@ -1,0 +1,46 @@
+button {
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    /*POSITION*/
+    padding: 12px;
+    /*DISPLAY*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*BACKGROUND*/
+    background-color: var(--blue-lite);
+    /*BORDER*/
+    border: 2px solid var(--stroke-lite);
+    border-radius: var(--radius);
+    /*TEXT*/
+    text-align: center;
+    color: var(--lite);
+}
+button:hover,
+button:focus,
+button:active {
+    /*BACKGROUND*/
+    background-color: var(--blue);
+    /*BORDER*/
+    border-color: var(--stroke-dark);
+}
+button i {font-size: 32px;}
+button:hover i {
+    /*ANIMATION*/
+    animation: shake 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite forwards normal;
+}
+button:active {box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.4);}
+button:active i {color: var(--stroke-dark);}
+button.add {
+    /*POSITION*/
+    margin: 12px 0;
+    width: 100%;
+    /*DISPLAY*/
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    font-weight: 600;
+    color: var(--lite);
+}
+button.add i {margin-left: 12px;}

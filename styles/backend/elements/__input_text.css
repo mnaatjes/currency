@@ -1,0 +1,20 @@
+/*--------------------------------*/
+/* Backend: Input Text */
+/*--------------------------------*/
+input {
+    outline: none;
+    /*POSITION*/
+    padding: 12px;
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    background-color: var(--mid);
+    /*BORDER*/
+    border: var(--border);
+    border-radius: var(--radius);
+    /*TEXT*/
+    text-align: center;
+}
+input:not(:last-child) {margin-right: 12px;}
+input:hover,
+input:focus,
+input:active {background-color: var(--lite);}

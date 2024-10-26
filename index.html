@@ -6,31 +6,80 @@
     <!--Font Awesome Update-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!--Main CSS Document-->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/backend/backend__main.css">
     <head>
-        <title>Currency Converter</title>
+        <title>Currency Loader</title>
     </head>
     <body class="flex">
-        <nav></nav>
-        <header></header>
-        <main class="grid">
-            <!--
-            <form action="scripts/php/write_json.php" method="POST">
-                <input id="data" type="hidden" name="data" value="">
-                <button type="submit">Submit</button>
+        <main>
+            <h2>Data Capture</h2>
+            <form action="">
+                <div class="input__container">
+                    <div class="__col">
+                        <div class="__row">
+                            <div class="checkbox">
+                                <input type="checkbox">GBP
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox">USD
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox">MXN
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox">AUD
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox">INR
+                            </div>
+                        </div>
+                        <div class="line--horizontal"></div>
+                        <div class="__row">
+                            <div class="checkbox">
+                                <input type="checkbox">BRL
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox">EUR
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox">AED
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox">JPY
+                            </div>
+                        </div>
+                    </div>
+                    <div class="__col">
+                        <div class="line--vertical"></div>
+                    </div>
+                    <div class="__col">
+                        <div class="__row">
+                            <input type="text" maxlength="4" size="4" placeholder="YYYY">
+                            <input type="text" maxlength="2" size="2" placeholder="MM">
+                            <input type="text" maxlength="2" size="2" placeholder="DD">
+                        </div>
+                        <div class="line--horizontal"></div>
+                        <div class="__row">
+                            <input type="text" maxlength="4" size="4" placeholder="YYYY">
+                            <input type="text" maxlength="2" size="2" placeholder="MM">
+                            <input type="text" maxlength="2" size="2" placeholder="DD">
+                        </div>
+                    </div>
+                    <button type="button">
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                    </button>
+                </div>
+                <button type="button" class="add">
+                    Add New Entry
+                    <i class="fa-solid fa-folder-plus"></i>
+                </button>
             </form>
-            -->
-            <canvas id="line_style" style="width: 100%; padding: 24px; margin: 0 auto;"></canvas>
+            <div class="loader__container">
+                <div id="loader"></div>
+            </div>
         </main>
-        <footer></footer>
     </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>-->
     <script src="scripts/js/functions_main.js" type="text/Javascript"></script>
-    <script src="scripts/js/data_currency.js" type="text/Javascript"></script>
-    <!--<script src="scripts/js/api_currency.js" type="text/Javascript"></script>-->
-    <!--<script src="scripts/js/charts_test.js" type="text/Javascript"></script>-->
-    <script>
-    </script>
+    <script src="scripts/js/class__api_client.js" type="text/Javascript"></script>
+    <script src="scripts/js/index.js" type="text/Javascript"></script>
 </html>

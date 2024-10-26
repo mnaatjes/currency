@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!--w3 Fonts -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Font Awesome Update-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--Main CSS Document-->
+    <link rel="stylesheet" href="styles/main.css">
+    <head>
+        <title>Currency Converter</title>
+    </head>
+    <body class="flex">
+        <nav></nav>
+        <header>
+            <button id="btn_menu_home" type="button">Home</button>
+            <button id="btn_menu_calc" type="button">Calc</button>
+            <button id="btn_menu_chart" type="button">Chart</button>
+        </header>
+        <main class="grid">
+            <div class="selectors">
+                <div id="btn_info_base"><b>Base</b></div>
+                <div id="btn_base"></div>
+                <div id="btn_info_quote"><b>Quote</b></div>
+                <div id="btn_quote"></div>
+            </div>
+            <div id="calculator">
+                <input type="text" name="base">
+                <input type="text" name="quote">
+            </div>
+            <span id="calc__error" style="color: red; font-size: 12px;"></span>
+            <h1>Data Loaded</h1>
+            <h3>Exchange Rates</h3>
+            <div id="exchange_rates"></div>
+            <div id="info">
+                <img src="" alt="" id="info--flag">
+                <h3 id="info--currency">USD</h3>
+                <h5>Country:</h5>
+                <div id="info--country"></div>
+                <h5>Units:</h5>
+                <div id="info--units"></div>
+                <h5>Symbol:</h5>
+                <div id="info--symbol"></div>
+                <h5>Introduced:</h5>
+                <div id="info--intro"></div>
+                <h5>Banknotes:</h5>
+                <div id="info--banknotes"></div>
+                <img src="" alt="" id="info--note">
+                <span id="info--caption"></span>
+                <h5>History:</h5>
+                <p id="info--text"></p>
+            </div>
+            <h3>Ticker</h3>
+            <div id="ticker"></div>
+        </main>
+        <footer></footer>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
+    <script src="scripts/js/functions_main.js" type="text/Javascript"></script>
+    <script src="scripts/js/class__data.js" type="text/Javascript"></script>
+    <script src="scripts/js/class__base__quote__table.js" type="text/Javascript"></script>
+    <script src="scripts/js/class__button.js" type="text/Javascript"></script>
+    <script src="scripts/js/class__user.js" type="text/Javascript"></script>
+    <script src="scripts/js/class__rates.js" type="text/Javascript"></script>
+    <script src="scripts/js/class__info.js" type="text/Javascript"></script>
+    <script src="scripts/js/class__calculator.js" type="text/Javascript"></script>
+    <script src="scripts/js/class__ticker.js" type="text/Javascript"></script>
+    <script src="scripts/js/implementation.js" type="text/Javascript"></script>
+    <script>
+        // includes
+        //loadScript('scripts/js/class__data.js');
+        //loadScript('scripts/js/implementation.js');
+    </script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>-->
+    <!--<script src="scripts/js/data_currency.js" type="text/Javascript"></script>-->
+    <!--<script src="scripts/js/api_currency.js" type="text/Javascript"></script>-->
+    <!--<script src="scripts/js/charts_test.js" type="text/Javascript"></script>-->
+</html>

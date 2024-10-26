@@ -1,0 +1,56 @@
+[
+    {
+        "base": "GBP",
+        "exchanges": [
+            {"date": "2022-12-01","quote": "USD", "rate": 0.743},
+            {"date": "2022-12-02","quote": "USD", "rate": 0.773},
+            {"date": "2022-12-03","quote": "USD", "rate": 0.753},
+            {"date": "2022-12-04","quote": "USD", "rate": 0.733},
+            {"date": "2022-12-05","quote": "USD", "rate": 0.673},
+            {"date": "2022-12-06","quote": "USD", "rate": 0.723}
+        ]
+    },
+    {
+        "latest": [
+            {
+                "base": "GBP",
+                "rates": [
+                    {"quote": "USD", "rate": 0.776},
+                    {"quote": "MXN", "rate": 20.006},
+                    {"quote": "JPY", "rate": 200.45}
+                ]
+            }
+        ]
+    },
+    {
+        "exchange": [
+            {
+                "base": "GBP",
+                "quote": "JPY",
+                "rate": 120.034
+            },
+            {
+                "base": "JPY",
+                "quote": "GBP",
+                "rate": 0.0456
+            }
+        ]
+    },
+    {
+        "week": [
+            {
+                "base": "GBP",
+                "quote": "USD",
+                "rates": [
+                    {"date": "2022-12-01", "rate": 0.976},
+                    {"date": "2022-12-02", "rate": 0.776},
+                    {"date": "2022-12-03", "rate": 0.876},
+                    {"date": "2022-12-04", "rate": 0.776},
+                    {"date": "2022-12-05", "rate": 0.676},
+                    {"date": "2022-12-06", "rate": 0.676},
+                    {"date": "2022-12-07", "rate": 0.776}
+                ]
+            }
+        ]
+    }
+]

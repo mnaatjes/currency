@@ -1,0 +1,16 @@
+/*--------------------------------*/
+/* Backend: Input Checkbox */
+/*--------------------------------*/
+.checkbox {
+    /*POSITION*/
+    padding: 12px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*BORDER*/
+    border-radius: var(--radius);
+    border: var(--border);
+}
+.checkbox:not(:last-child) {margin-right: 12px;}
+input[type="checkbox"] {margin-right: 12px;}
